@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Based on http://www.airliners.net/photo/Ryan-PT-22-Recruit/1998541/L/&sid=a166bf605882a7a5fc1f7e52b1e80407 -->
+<PropertyList>
+
+
+  <!-- MAGNETO -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.2150 </y-m>
+      <z-m> -0.110 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.088 </y-m>
+      <z-m>  0.022 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.032 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.000 </x-m>
+      <y-m>  0.090 </y-m>
+      <z-m>  0.027 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.091 </y-m>
+      <z-m> -0.069 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.071 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MANIFOLD -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/man/man.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.091 </y-m>
+      <z-m> -0.068 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL GAUGE -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.158 </y-m>
+      <z-m> -0.016 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CYL TEMPERATURE -->
+  <model>
+    <path>Aircraft/Ryan-PT21-A/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m>  0.210 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Ryan-PT21-A Motorglider simulation config.
+
+April 2013, Ryan-PT21-A
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim include="Systems/views.xml">
+
+  <description>Ryan- PT21-A</description>
+  <author>LesterBoffo and Helijah 3D/FDM</author>
+  
+  <flight-model>yasim</flight-model>
+  <aero>Ryan-PT21-A-yasim</aero>
+  <fuel-fraction>0.8</fuel-fraction>
+
+  <systems>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+  </systems> 
+ 
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <sound>
+   <path>Aircraft/Ryan-PT21-A/Sounds/pt21-sound.xml</path>
+  </sound>
+
+
+  <model>
+   <path>Aircraft/Ryan-PT21-A/Models/Ryan-PT21A.xml</path>
+  </model> 
+
+    <help>
+    <key>
+      <name>C</name>
+      <desc>toggle Canopy</desc>
+    </key>
+    <text>---Take Off---
+ Apply power. Be prepared to use aileron against Torque and Rudder to counteract Swing. Keep elevator neutral and wait for the tail to raise. The aircraft will lift off easily. 
+
+---Landing---
+ Approach Speed is 48-44 kts. </text>
+  </help>
+
+  <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+  <engines>
+  <engine>
+   <rpm type="double">570</rpm>
+   <!-- fake unimplemented settings -->
+   <fuel-pump-psi type="double">8</fuel-pump-psi>
+   <oil-pressure-psi type="double">50</oil-pressure-psi>
+  </engine>
+ </engines>
+
+<weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>200</max-lb>
+      <min-lb>120</min-lb>
+    </weight>
+	
+	<weight n="1">
+      <name>Co-Pilot</name>
+      <weight-lb>150</weight-lb>
+      <max-lb>180</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+ <!-- set up control properties for YASim -->
+ <controls>
+   <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+   </engines>
+   <canopy>
+      <canopy-pos-norm type="float">1.0</canopy-pos-norm>
+   </canopy>
+   <fuel>
+     <switch-position type = "int">0</switch-position>
+     <tank n="0">
+       <fuel_selector>true</fuel_selector>
+     </tank>
+     <tank n="1">
+       <fuel_selector>true</fuel_selector>
+     </tank>  
+   </fuel>
+</controls>
+
+
+  </sim>
+
+
+ 
+ <!-- Map Keys -->
+ <input>
+    <keyboard>
+        <key n="67">
+        <name>C</name>
+        <desc>Toggle Canopy</desc>
+      </key>
+   </keyboard>
+ </input>
+
+<!-- Nasal files/scripts -->
+  <!-- <nasal>
+    <doors>
+      <file>Aircraft/Ryan-PT21-A/Nasal/doors.nas</file>
+    </doors>
+   <pt22>
+      <file>Aircraft/Ryan-PT21-A/Nasal/light.nas</file>
+    </pt22>
+  </nasal> -->
+
+
+</PropertyList>
+
+
+
+
